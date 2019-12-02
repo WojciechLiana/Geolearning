@@ -1,0 +1,502 @@
+body {
+    font-family: Arial;
+    overflow-x: hidden;
+    margin: 0;
+    height: 100%;
+}
+
+.firstdiv {
+    position: fixed;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.firstdiv2 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    visibility: hidden;
+    padding-top: 200px;
+}
+
+.firstimage {
+    display: block;
+    background-image: url("geolearning-label-mobile.png");
+    max-width: 400px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    visibility: visible;
+}
+
+.firstlabel {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 100;
+    visibility: visible;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 170px;
+    line-height: 170px;
+    transition-property: line-height, height, background-color;
+    transition-duration: 3s;
+}
+
+.smallmenu {
+    background-color: black;
+    height: 50px;
+    line-height: 50px;
+    transition-duration: 3s;
+}
+
+.menu ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+
+.menu ul .logo {
+    height: 100%;
+    width: auto;
+}
+
+li2 a {
+    margin-right: 50px;
+    display: inline;
+    color: white;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+
+li1 {
+    float: left;
+    height: 100%;
+}
+
+
+
+.ouroffer h1 {
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.ouroffer h3 {
+    position: relative;
+    margin-left: 25%;
+    text-align: justify;
+    width: 50%;
+    padding-bottom: 30px;
+}
+
+.ouroffer {
+    position: relative;
+    height: fit-content;
+    background-color: white;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.pictures { /* nie rozumieme czemu tak ma byc...ale tak ma byc..bo inaczej ten div ma height 0... */
+    display: inline-block;
+    background-color: white;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.pictures .imgbg {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: blueviolet;
+}
+
+.pictures .image {
+    width: 100%;
+    height: 400px;
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+    transition-duration: 2s;
+}
+
+.pictures .image:hover {
+    opacity: 50%;
+}
+
+#workshops{
+    background-image: url("workshops.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#attractions{
+    background-image: url("attractions.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#mineral{
+    background-image: url("mineral.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#eceg{
+    background-image: url("eceg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.pictures h3 {
+    width: 80%;
+    padding-left: 10%;
+}
+
+.pictures .description {
+    width: 80%;
+    padding-left: 10%;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+.meetus {
+    text-align: center;
+    background-color: #EE7930;
+    color: white;
+    position: relative;
+}
+
+.meetus h4{
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.meetus h4::before { /* nie moge tego dadac ani before ani jako nowy div */
+    position: absolute;
+    content: '';
+    display: block;
+    height: 120px;
+    width: 120%;
+    transform: rotate(-2deg);
+    background-color: #EE7930;
+    top: -30px;
+}
+
+.meetus h6 {
+    margin: 0;
+    width: available;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 13px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    float: right;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.seemore {
+    content: "ZOBACZ WIĘCEJ!";
+    color: #EE7930;
+    line-height: 40px;
+}
+
+.moveup {
+    background-color: white;
+    border-width: 0;
+    margin-bottom: 130px;
+    height: 40px;
+}
+
+.trustus {
+    background-image: url(testimonials.png);
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.trustus h4 {
+    margin: 0;
+    padding-top: 130px;
+    font-size: 25px;
+}
+
+.trustus h6 {
+    padding: 0 30px 30px;
+    margin-left: 0;
+    font-size: 23px;
+    font-family: Arial;
+    font-weight: 100;
+    position: relative;
+}
+
+.trustus h6::before{
+    content: '\201C ';
+    font-size: 50px;
+    font-family: Inconsolata;
+    font-weight: 900;
+    position: relative;
+    top: 15px;
+    right: 5px;
+}
+
+.trustus h6::after{
+    content: '\201D';
+    font-size: 50px;
+    font-family: Inconsolata;
+    font-weight: 900;
+    position: absolute;
+    bottom: revert;
+    bottom: 10px;
+}
+
+.trustus h5 {
+    margin: 0;
+    padding-bottom: 130px;
+    font-size: 18px;
+}
+
+.trustus h5 span {
+    position: relative;
+    top: 3px;
+}
+
+.line {
+    height: 3px;
+    width: 200px;
+    margin: 0;
+    background-color: white;
+    display: inline-block; /* to wysrodkowalo diva...czemu? */
+}
+
+hr {
+    width: 200px;
+    border-color: white;
+    border-width: 1px;
+}
+
+.follow {
+    text-align: center;
+    background-image: url("trianglify.svg");
+    background-size: cover;
+    position: relative;
+}
+
+.follow h3 {
+    padding-top: 180px;
+    padding-bottom: 20px;
+    margin: 0;
+    color: white;
+    font-size: 25px;
+}
+
+.icones {
+    padding-bottom: 180px;
+}
+
+.icones img {
+    width: 50px;
+    height: 50px;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.icones span {
+    font-size: 46px;  /* jakby mu tu zmienic rozmiar, jest za nisko lub wysoko */
+    font-weight: bolder;
+    color: white;
+    width: 50px;
+    height: 50px;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.insta1 {
+    position: relative;
+    top: 8px;
+}
+
+.insta2 {
+    position: relative;
+    top: -45px;
+    z-index: -1;
+}
+
+.yt1 {
+    position: relative;
+    top: 8px;
+}
+
+.yt2 {
+    position: relative;
+    top: -45px;
+    z-index: -1;
+}
+
+.icones button {
+    display: inline;
+    border-radius: 35px;
+    width: 70px;
+    height: 70px;
+    border-width: 0;
+    background-color: white;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.icones button:hover {
+    visibility: visible;
+}
+
+.ytbutton:hover > .yt2 {  /* latwiej by bylo w js a nie tworzyc takie dziwne */
+    z-index: 1;
+}
+
+.ytbutton:hover > .yt1 {
+    z-index: -1;
+}
+
+.instbutton:hover > .insta1 {
+    z-index: -1;
+}
+
+.instbutton:hover > .insta2 {
+    z-index: 1;
+}
+
+.fbbutton:hover > span {
+    color: blue;
+}
+
+.leavemessage {
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;
+    justify-content: space-between;
+    text-align: center;
+    background-color: blue;
+    position: relative;
+}
+
+.leavechild {
+    margin: 10px 0px;
+    flex: 1 0px;
+    width: 50%;
+    color: white;
+    background-color: blue;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.leavemessage textarea {
+    resize: none;
+    flex: 4 0px;
+}
+
+.leavemessage h3 {
+    border-width: 0;
+}
+
+.leavemessage input,
+.leavemessage textarea {
+    padding: 10px;
+}
+
+.leavemessage button {
+    letter-spacing: 1.5px;
+    font-size: 17.5px;
+}
+
+.leavemessage > .leavechild::-webkit-input-placeholder { /* podobno placeholdera trzeba stylowac dla roznych przegladarek */
+    color: white;
+}
+
+.leavemessage > .leavechild:-moz-placeholder {
+    color: white;
+}
+
+.leavemessage > .leavechild::-moz-placeholder {
+    color: white;
+}
+
+.leavemessage > .leavechild:-ms-input-placeholder {
+    color: white;
+}
+
+.copyright {
+    background-color: black;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    font-family: Calibri;
+    position: relative;
+}
+
+@media (min-width: 800px) {  /*dziwnie to dziala jak zmniejszam lub zwiekszam okno w przegladarce */
+
+    .pictures div {
+        width: 25%;
+        float: left;
+    }
+
+    .trustus h6 {
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    .meetus h6{
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    li2 a {
+        visibility: visible;
+    }
+
+    .firstimage {
+        background-image: url("geolearning-label.png");
+        max-width: 1000px;
+        width: 80%;
+        height: 200px;
+    }
+
+}
+
+
+
